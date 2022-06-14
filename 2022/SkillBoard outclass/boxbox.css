@@ -1,0 +1,153 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header.aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea {font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+.wrapper {
+    background: url('../FlexBox/repeat.jpg');    
+}
+.sticky {
+    color: aliceblue;
+}
+.forfooter {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    /* растяжение контейнера, чтобы прижать футер */
+  flex: 1 1 auto;
+  border-radius: 30px;
+  margin: auto;
+  width: 70%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* скорость работы hover */
+  transition: all 0.9s;
+  /* цвет  */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3b679e+0,2b88d9+50,207cca+51,7db9e8+100;Blue+Gloss+%232 */
+background: #3b679e; /* Old browsers */
+background: -moz-linear-gradient(top,  #3b679e 0%, #2b88d9 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #3b679e 0%,#2b88d9 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #3b679e 0%,#2b88d9 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+.container:hover {
+    box-shadow: 1px 1px 20px 1px rgb(201, 250, 6);
+}
+.firstrow, .secondrow, .thirdrow {
+    display: flex;
+    border-radius: 30px;
+    flex: 1 1 auto; 
+    margin: 5px;
+    
+}
+.l-first, .r-first, .l-second, .r-second, .l-third, .r-third {
+    border: solid 1px green;
+    border-radius: 20px;
+}
+.firstrow {
+ background-color: rgb(159, 234, 209);
+justify-content: space-between;
+}
+.l-first {
+   
+}
+.r-first {
+}
+.secondrow {
+    background-color: rgba(158, 101, 211, 0.828);
+    justify-content: space-around;
+}
+.l-second {
+}
+.r-second {
+}
+.thirdrow {
+    background-color: rgb(234, 240, 123);
+    justify-content: center;
+}
+.l-third:hover {
+    background-color: #2b88d9;
+}
+.l-third {
+    width: 50%;
+}
+.chatbox {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    background-color: aliceblue;
+    margin-top: 10%;
+    border: solid 5px rgba(32, 92, 52, 0.453);
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* меняет только входящие сообщения,т.к. у исходящих стоит margin left auto */
+    align-items: flex-start; 
+    justify-content: space-between;
+    /* внутрення тень */
+    box-shadow: inset 1px 1px 7px 1px black;
+
+
+}
+    .numb, .numb2 {
+    max-width: 70%;
+    border-radius: 20px;
+    padding: 3px;
+}
+.numb {
+    background-color: rgb(226, 226, 226);
+}
+.numb2 {
+    color: antiquewhite;
+    background-color: rgb(0, 115, 222);
+    margin-left: auto;
+}
+
+.r-third {
+    
+}
+.footer {
+    margin-top: 20px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(0, 72, 255);
+    border-radius: 50px 50px 0 0;
+}

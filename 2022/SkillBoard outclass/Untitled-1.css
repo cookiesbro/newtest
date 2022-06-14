@@ -1,0 +1,31 @@
+.wrapper {
+    background-color: rgb(189, 120, 29);
+    min-height: 100vh;
+}
+.menu {
+    border-radius: 25px;
+    background-color: rgb(109, 8, 8);
+}
+.menu-text {
+    
+    font-size: 20px;
+    color: rgb(172, 172, 174);
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.punct {
+    display: flex;
+    justify-content:center;
+    transition: all 1s;
+}
+.punct:hover {
+    border-radius: 30px;
+    background: #3b679e;
+   }
+.punct:active {
+    text-decoration: overline;
+    transition: 2s;
+}
+.punct::before {
+    content: "Sublime";
+}

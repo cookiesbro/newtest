@@ -1,0 +1,11 @@
+@charset "UTF-8";
+header {
+  background-color: white;
+}
+
+@importЯ body {
+  font-size: 20px;
+  div {
+    font-size: 10px;
+  }
+}

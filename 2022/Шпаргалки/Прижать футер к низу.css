@@ -1,0 +1,24 @@
+
+/* ВАЖНО высота страницы должна быть 100% */
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	/* выстраиваем основные элементы вертикально (середина-контент,снизу футер) */
+	display: flex;
+	flex-direction: column;
+}
+.content {
+    /* Даем разрешение коненту увеличиваться и уменьшаться */
+	flex: 1 1 auto;
+	color: rgb(0, 255, 72);
+	font-size: 35px;
+}
+.footer {
+	text-align: center;
+	font-size: 35px;
+}

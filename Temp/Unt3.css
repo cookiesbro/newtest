@@ -1,0 +1,61 @@
+:root {
+    --minh: 85vh;
+    --color1: wheat;
+    --color2: rgb(25, 73, 112);
+    --color3: rgb(91, 3, 3);
+  }
+  html {
+    font-size: 38px;
+  }
+  .curtain {
+    /** create the "split" background **/
+    background-image: linear-gradient(to bottom, var(--color2) 50%, var(--color1) 10%);
+  }
+  /** add extra space to the bottom (need this for the "sticky" effect) **/
+  .curtain::after {
+    content: "";
+    display: block;
+    min-height: var(--minh);
+  }
+  .invert {
+    /** make the content sticky **/
+    position: sticky;
+    /* приклеивается, затем отклеивается по ходу страницы */
+    top: 50px;
+  
+    /** center the content **/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+     /** blend the content with the contrast effect **/
+     -mix-blend-mode: difference;
+
+    /** set the minimum height of the section **/
+    min-height: var(--minh);
+  }
+  h2 {
+    /** set the color of the text **/
+    color: var(--color3);
+    cursor: pointer;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+
+  }
+  .hover-1 {
+    background: linear-gradient(#1095c1 0 0) var(--p,0)/var(--p,0) no-repeat;
+    transition: .4s,background-position 0s;
+  }
+  .hover-1:hover {
+    --p: 100%;
+    color: #fff;
+  }
+  .linear {
+      background: linear-gradient(90deg, turquoise, teal);
+      padding: 50px 10px 50px 10px;
+      margin: 10px;
+      border: solid 10px teal;
+      font-weight: bold;
+      font-size: 20px;
+      position: fixed;
+  }
+  
